@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Outlet, useLocation, Link } from "react-router-dom";
 import {
   LayoutDashboard, Users, AlertTriangle, BarChart3, FileText, Settings,
-  Bell, Search, Menu, X, ChevronDown, LogOut
+  Bell, Search, Menu, X, ChevronDown, LogOut, ShieldCheck
 } from "lucide-react";
 import { summaryStats } from "@/lib/dummyData";
 
