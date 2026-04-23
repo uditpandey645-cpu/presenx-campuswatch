@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Outlet, useLocation, Link } from "react-router-dom";
 import {
   LayoutDashboard, Users, AlertTriangle, BarChart3, FileText, Settings,
-  Bell, Search, Menu, X, ChevronDown, LogOut
+  Bell, Search, Menu, X, ChevronDown, LogOut, ShieldCheck
 } from "lucide-react";
 import { summaryStats } from "@/lib/dummyData";
 
@@ -27,7 +27,7 @@ export default function DashboardLayout() {
     <div className="flex flex-col h-full">
       <div className="p-6 flex items-center gap-3">
         <div className="w-9 h-9 rounded-lg gradient-primary flex items-center justify-center">
-          <span className="font-heading font-bold text-primary-foreground text-sm">PX</span>
+          <ShieldCheck className="w-5 h-5 text-primary-foreground" />
         </div>
         {sidebarOpen && <span className="font-heading font-bold text-lg text-sidebar-primary-foreground">PresenX</span>}
       </div>
